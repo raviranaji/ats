@@ -1,0 +1,72 @@
+Sep 10, 2018 7:05:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Sep 10, 2018 7:05:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Sep 10, 2018 7:05:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:05:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:05:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: stop: Stopping web application '/MVC'
+Sep 10, 2018 7:05:52 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MVC'
+Sep 10, 2018 7:09:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:09:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:09:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: restart: Reloading web application '/MVC'
+Sep 10, 2018 7:12:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Associated with Deployer 'Catalina:type=Deployer,host=localhost'
+Sep 10, 2018 7:12:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: init: Global resources are available
+Sep 10, 2018 7:12:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:12:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:12:19 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MVC'
+Sep 10, 2018 7:12:20 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/IG264C~1/AppData/Local/Temp/context1722964140527807943.xml'
+Sep 10, 2018 7:12:21 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MVC'
+Sep 10, 2018 7:12:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:12:38 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MVC'
+Sep 10, 2018 7:12:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:12:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:12:58 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/IG264C~1/AppData/Local/Temp/context2860451675073727299.xml'
+Sep 10, 2018 7:12:59 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MVC'
+Sep 10, 2018 7:14:18 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:14:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:14:27 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MVC'
+Sep 10, 2018 7:14:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:14:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:14:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/IG264C~1/AppData/Local/Temp/context8140392580148884650.xml'
+Sep 10, 2018 7:14:32 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MVC'
+Sep 10, 2018 7:16:30 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:16:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:16:35 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: undeploy: Undeploying web application at '/MVC'
+Sep 10, 2018 7:16:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:16:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: list: Listing contexts for virtual host 'localhost'
+Sep 10, 2018 7:16:46 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: install: Installing context configuration at 'file:/C:/Users/IG264C~1/AppData/Local/Temp/context4166922420470525350.xml'
+Sep 10, 2018 7:16:48 PM org.apache.catalina.core.ApplicationContext log
+INFO: Manager: start: Starting web application '/MVC'

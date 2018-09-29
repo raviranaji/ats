@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/servlet/DownloadServlet.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/bean/Assignment.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/web/admin.jsp</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/web/model.html</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/web/User/index.jsp</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/bean/Submission.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/servlet/UserServlet.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/util/decoConnection.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/servlet/FileUploadServlet.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/web/userpage.jsp</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/web/index.html</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/dao/decodao.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/servlet/decoServlet.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/src/java/com/tcs/ignite/DECO/servlet/FileSubmitServlet.java</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/web/WEB-INF/web.xml</file>
+            <file>file:/home/ravi/NetBeansProjects/DECO/web/assignment.html</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,422 @@
+<%-- 
+    Document   : index
+    Created on : 13 Sep, 2018, 1:18:25 PM
+    Author     : ravi
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!doctype html>
+  
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Admin</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+<!--    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">-->
+
+    <!-- Add to homescreen for Safari on iOS -->
+<!--    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">-->
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+<!--    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+ -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.cyan-light_blue.min.css">
+    <link rel="stylesheet" href="./Assets/css/styles.css">
+    <script src="./Assets/js/jquery.js"></script>
+    
+    <!--smart alert-->
+    <link href="Assets/css/smartalert.css" rel="stylesheet" type="text/css"/>
+    <script src="Assets/js/smartalert.js" type="text/javascript"></script>
+    
+   <!--  <link rel="stylesheet" href="material.min.css">
+  -->   
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    a:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
+    a:active{
+        text-decoration: none;
+    }
+/*    #content{
+        display: none;
+    }*/
+        
+    </style>
+    <script src="Assets/js/drawer_item_click.js" type="text/javascript"></script>
+     
+  </head>
+  <body>
+      
+    
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+        <div  class="mdl-progress mdl-js-progress mdl-progress__indeterminate" style="width:100%;"></div>
+ 
+        <header class="demo-header mdl-layout__header mdl-color--#49bdd4-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title" id="header_title">Home</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search">
+              <label class="mdl-textfield__label" for="search">Enter your query...</label>
+            </div>
+          </div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+            <li class="mdl-menu__item">Legal information</li>
+          </ul>
+        </div>
+      </header>
+
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+          <img src="./Assets/images/user.png" class="demo-avatar">
+          <div class="demo-avatar-dropdown">
+            <span>hello@example.com</span>
+            <div class="mdl-layout-spacer"></div>
+            <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
+              <span class="visuallyhidden">Accounts</span>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+              <li class="mdl-menu__item">hello@example.com</li>
+              <li class="mdl-menu__item">info@example.com</li>
+              <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
+            </ul>
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" id="home"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a>
+          <a class="mdl-navigation__link" id="user"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">face</i>User</a>
+          <a class="mdl-navigation__link" id="admin"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>Admin</a>
+          <a class="mdl-navigation__link" id="trash"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">delete</i>Trash</a>
+<!--           <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">report</i>Spam</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">forum</i>Forums</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">flag</i>Updates</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">local_offer</i>Promos</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">shopping_cart</i>Purchases</a>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">people</i>Social</a> -->
+
+          <div class="mdl-layout-spacer"></div>
+           <a class="mdl-navigation__link" id="logout"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">logout</i>Logout</a> 
+          <a class="mdl-navigation__link" id="help"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span>Help</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100" id="content">
+             
+              
+              
+ <div class="mdl-grid demo-content">
+          <div class="mdl-grid" style="width: 100%;">
+              <div class="mdl-cell mdl-cell--12-col">
+                 <table class = "mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width: 100%">
+                       <thead>
+                          <tr><th class = "mdl-data-table__cell--non-numeric">Student</th>
+                             <th>Class</th>
+                             <th>Grade</th>
+                             <th>Action</th>
+                          </tr>
+                       </thead>
+                       
+                       <tbody>
+                          <tr>
+                              <td class = "mdl-data-table__cell--non-numeric">Mahesh Parashar</td>
+                             <td>VI</td>
+                             <td>A</td>
+                             <td>
+                                  <i class="material-icons mdl-button--accent">edit</i> 
+                                  <i class="material-icons mdl-button--accent">update</i>
+                                 <i class="material-icons mdl-button--accent">delete</i>
+                             </td>
+                          </tr>
+                          <tr>
+                              <td class = "mdl-data-table__cell--non-numeric">Rahul Sharma</td>
+                             <td>VI</td>
+                             <td>B</td>
+                          </tr>
+                          <tr>
+                              <td class = "mdl-data-table__cell--non-numeric">Mohan Sood</td>
+                             <td>VI</td>
+                             <td>A</td>
+                          </tr>
+                       </tbody>
+                </table>
+              </div>           
+          </div>
+
+          <div class="mdl-grid" style="width: 100%;">
+              <div class="mdl-cell mdl-cell--12-col">
+                 <table class = "mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp" style="width: 100%">
+                       <thead>
+                          <tr><th class = "mdl-data-table__cell--non-numeric">Student</th>
+                             <th>Class</th><th>Grade</th></tr>
+                       </thead>
+                       
+                       <tbody>
+                          <tr><td class = "mdl-data-table__cell--non-numeric">Mahesh Parashar</td>
+                             <td>VI</td><td>A</td></tr>
+                          <tr><td class = "mdl-data-table__cell--non-numeric">Rahul Sharma</td>
+                             <td>VI</td><td>B</td></tr>
+                          <tr><td class = "mdl-data-table__cell--non-numeric">Mohan Sood</td>
+                             <td>VI</td><td>A</td></tr>
+                       </tbody>
+                </table>
+              </div>           
+          </div>
+            
+          <div class="mdl-grid" style="width: 100%;">
+              <div class="mdl-cell mdl-cell--12-col">
+                 <table class="mdl-data-table mdl-js-data-table" style="width: 100%">
+                  <thead>
+                    <tr>
+                      <th class="mdl-data-table__cell--non-numeric">Name</th>
+                      <th class="mdl-data-table__cell--non-numeric">Nickname</th>
+                      <th>Age</th>
+                      <th class="mdl-data-table__cell--non-numeric">Living?</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">John Lennon</td>
+                      <td class="mdl-data-table__cell--non-numeric">The smart one</td>
+                      <td>40</td>
+                      <td class="mdl-data-table__cell--non-numeric">No</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Paul McCartney</td>
+                      <td class="mdl-data-table__cell--non-numeric">The cute one</td>
+                      <td>73</td>
+                      <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">George Harrison</td>
+                      <td class="mdl-data-table__cell--non-numeric">The shy one</td>
+                      <td>58</td>
+                      <td class="mdl-data-table__cell--non-numeric">No</td>
+                    </tr>
+                    <tr>
+                      <td class="mdl-data-table__cell--non-numeric">Ringo Starr</td>
+                      <td class="mdl-data-table__cell--non-numeric">The funny one</td>
+                      <td>74</td>
+                      <td class="mdl-data-table__cell--non-numeric">Yes</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+              </div>           
+          </div>
+            
+        </div>              
+              
+      </main>
+    </div>
+      
+      <script>
+          
+ $(document).ready(function(){
+     
+      $(".mdl-progress").fadeOut(3000);  
+             $("#logout").click(function(){
+                swal({
+                    title: "Are you sure?",
+                    text: "",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonClass: "btn-danger",
+                    confirmButtonText: "Yes, Logout!",
+                    cancelButtonText: "No, Cancel!",
+                    closeOnConfirm: false,
+                    closeOnCancel: false
+                    },
+                    function(isConfirm) {
+                        if (isConfirm) {
+                          swal("", "", "success");
+                        } else {
+                          swal("", "", "error");
+                        }
+                    });
+                        
+             });
+             
+             
+             $("#home").click(function(){
+                 $(".mdl-progress").fadeIn(); 
+                 $("#content").html("");
+                 $.ajax({
+                    url: "home.jsp",
+                    success: function(data){
+                        $(".mdl-progress").fadeOut(3000); 
+                        $("#header_title").text("Home");
+                        $("#content").html(data);   
+                        
+                    },
+                    error:function(){
+                      alert("error");
+                    }
+                }); 
+                        
+             });
+             
+            $("#user").click(function(){
+                alert("ggggfh0");
+                 $.ajax({
+                    url: "..../decoServlet",
+                    type: "POST",
+                    data: {
+                        act: "getUsers"
+                    },
+                    dataType: "JSON",
+                    success: function (data) {
+                        alert(data);
+                        
+                       for (var i = 0; i < data.user_list.length; i++)
+                        {
+                           
+                          $("#rowdata").append('<tr>'+
+                                    '<td class = "mdl-data-table__cell--non-numeric">'+ data.user_list[i].userid+'</td>'+
+                                    '<td>'+ data.user_list[i].username+'</td>'+
+                                    '<td>'+ data.user_list[i].roleid+'</td>'+
+                                    '<td>'+ data.user_list[i].status+'</td>'+
+                                    '</tr>');
+                        }
+                        
+                    },
+                    error:function(){
+                        alert("error");
+                    }
+                    
+                    });
+                     
+                        
+                        
+             });
+             
+            $("#admin").click(function(){
+               $(".mdl-progress").fadeIn(); 
+               $("#content").html("");
+               $.ajax({
+                  url: "home.jsp",
+                  success: function(data){
+                      $(".mdl-progress").fadeOut(3000);  
+                      $("#header_title").text("Admin");
+                      $("#content").html(data);                       
+                  },
+                  error:function(){
+                    alert("error");
+                  }
+              }); 
+
+            });
+            
+             
+            $("#admin").click(function(){
+               $.ajax({
+                    url: "decoServlet",
+                    type: "POST",
+                    data: {
+                        act: "getAdmin"
+                    },
+                    dataType: "JSON",
+                    success: function (data) {
+                        alert("success");
+                    },
+                    error:function(){
+                        alert("error");
+                    }
+                   
+                 
+                });  
+
+            });
+            
+     
+            $("#trash").click(function(){
+               $(".mdl-progress").fadeIn(); 
+               $("#content").html("");
+               $.ajax({
+                  url: "home.jsp",
+                  success: function(data){
+                      $(".mdl-progress").fadeOut(3000); 
+                      $("#header_title").text("Trash");
+                      $("#content").html(data);                       
+                  },
+                  error:function(){
+                    alert("error");
+                  }
+              }); 
+
+            });
+            
+            
+            $("#help").click(function(){
+               $(".mdl-progress").fadeIn(); 
+               $("#content").html("");
+               $.ajax({
+                  url: "home.jsp",
+                  success: function(data){
+                      $(".mdl-progress").fadeOut(3000);  
+                      $("#content").html(data);                       
+                  },
+                  error:function(){
+                    alert("error");
+                  }
+              }); 
+
+            });
+        
+    });
+                     
+
+//        $(document).ready(function(){            
+//           $.ajax({
+//            url: "home.jsp",
+//            success: function(data){
+//                $(".mdl-progress").fadeOut(3000);  
+//                $("#content").html(data);
+//                $("#content").fadeIn(2000);
+//            },
+//            error:function(){
+//              alert("error");
+//            }
+//          }); 
+//          
+//});        
+      </script>
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </body>
+</html>
